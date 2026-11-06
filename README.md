@@ -22,7 +22,7 @@ for Kuwait and the Gulf.
 ## Installation
 
 ```sh
-composer require kwtsms/krayin-kwtsms
+composer require kwtsms/kwtsms-krayin
 php artisan optimize:clear
 ```
 

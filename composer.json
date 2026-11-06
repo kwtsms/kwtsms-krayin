@@ -1,9 +1,20 @@
 {
-    "name": "kwtsms/krayin-kwtsms",
+    "name": "kwtsms/kwtsms-krayin",
     "description": "kwtSMS for Krayin CRM: send SMS from workflows",
+    "homepage": "https://github.com/kwtsms/kwtsms-krayin",
+    "support": {
+        "issues": "https://github.com/kwtsms/kwtsms-krayin/issues",
+        "source": "https://github.com/kwtsms/kwtsms-krayin"
+    },
     "type": "library",
     "license": "MIT",
-    "keywords": ["krayin", "crm", "sms", "kwtsms", "kuwait"],
+    "keywords": [
+        "krayin",
+        "crm",
+        "sms",
+        "kwtsms",
+        "kuwait"
+    ],
     "require": {
         "php": "^8.2",
         "kwtsms/kwtsms-php": "^1.8"
