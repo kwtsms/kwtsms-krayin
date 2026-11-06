@@ -8,14 +8,16 @@ for Kuwait and the Gulf.
 - A new workflow action, **Send SMS to person**, for lead and person workflows (created, updated, and any condition
   Krayin workflows support).
 - The text uses Krayin's own placeholders, for example `{%leads.title%}` or `{%persons.name%}`.
-- Sends to the person's "mobile" number, or the first number on file.
+- Sends to the person's first contact number (a number labelled "mobile" wins when there is one).
 - English and Arabic. Test mode: queued on kwtSMS, never delivered; their credits are held until you delete them from the Sending Queue in your kwtSMS account.
 - A failed SMS never stops the workflow; it is written to the Laravel log.
+- The API password is stored encrypted and never shown again on the settings page (Krayin itself keeps settings in
+  plain text, so the module moves the password to an encrypted entry when you save).
 
 ## Requirements
 
-- Krayin CRM 2.x (Laravel 12, PHP 8.3).
-- A kwtSMS account with API access. [Sign up free](https://www.kwtsms.com/signup/).
+- Krayin CRM 2.x (tested on 2.2.0; Laravel 12, PHP 8.3).
+- A kwtSMS account with API access. [Free test account](https://www.kwtsms.com/cportal/signup/).
 
 ## Installation
 

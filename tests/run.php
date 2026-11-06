@@ -113,6 +113,13 @@ namespace {
     };
     check('exception caught', SmsAction::send('99912345678', 'x', $cfg)['code'] === 'EXCEPTION');
 
+    // 2026-11-07 01:25 +03: password lookup (encrypted copy first, plain fallback). Task krayin-new.
+    require __DIR__ . '/../src/Secret.php';
+    $dec = fn ($v) => str_replace('enc:', '', $v);
+    check('encrypted copy wins', \KwtSms\Krayin\Secret::resolvePassword('enc:new', 'old', $dec) === 'new');
+    check('plain fallback when no encrypted copy', \KwtSms\Krayin\Secret::resolvePassword('', 'old', $dec) === 'old');
+    check('plain fallback when decrypt fails', \KwtSms\Krayin\Secret::resolvePassword('bad', 'old', function () { throw new \RuntimeException('x'); }) === 'old');
+
     echo $fails ? "FAILED $fails of $count\n" : "OK $count tests\n";
     exit($fails ? 1 : 0);
 }

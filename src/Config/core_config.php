@@ -27,6 +27,8 @@ return [
                 'name' => 'password',
                 'title' => 'API password',
                 'type' => 'password',
+                // 2026-11-07 01:25 +03: the saved password is stored encrypted and never shown here again. Task krayin-new.
+                'info' => 'Stored encrypted and never shown again. Leave empty to keep the saved password.',
             ], [
                 'name' => 'sender',
                 'title' => 'Sender ID',
