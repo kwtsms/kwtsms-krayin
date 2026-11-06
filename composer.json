@@ -1,0 +1,23 @@
+{
+    "name": "kwtsms/krayin-kwtsms",
+    "description": "kwtSMS for Krayin CRM: send SMS from workflows",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["krayin", "crm", "sms", "kwtsms", "kuwait"],
+    "require": {
+        "php": "^8.2",
+        "kwtsms/kwtsms-php": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "KwtSms\\Krayin\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "KwtSms\\Krayin\\KwtSmsServiceProvider"
+            ]
+        }
+    }
+}
