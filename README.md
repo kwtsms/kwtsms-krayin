@@ -9,7 +9,7 @@ for Kuwait and the Gulf.
   Krayin workflows support).
 - The text uses Krayin's own placeholders, for example `{%leads.title%}` or `{%persons.name%}`.
 - Sends to the person's "mobile" number, or the first number on file.
-- English and Arabic. Test mode: queued on kwtSMS, never delivered, no credits used.
+- English and Arabic. Test mode: queued on kwtSMS, never delivered; their credits are held until you delete them from the Sending Queue in your kwtSMS account.
 - A failed SMS never stops the workflow; it is written to the Laravel log.
 
 ## Requirements

@@ -35,7 +35,7 @@ return [
                 'validation' => 'max:11',
             ], [
                 'name' => 'test_mode',
-                'title' => 'Test mode (queued on kwtSMS, not delivered, no credits used)',
+                'title' => 'Test mode (queued on kwtSMS, not delivered; credits are held until you delete the message from the Sending Queue)',
                 'type' => 'boolean',
                 'default' => '0',
             ],
