@@ -3,6 +3,8 @@
 Send SMS from [Krayin CRM](https://krayincrm.com) workflows through [kwtSMS](https://www.kwtsms.com), the SMS gateway
 for Kuwait and the Gulf.
 
+All kwtSMS integrations: [kwtsms.com/integrations](https://www.kwtsms.com/integrations/)
+
 ## Features
 
 - A new workflow action, **Send SMS to person**, for lead and person workflows (created, updated, and any condition
