@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/readme-header-dark.png">
+  <img alt="kwtSMS for Krayin CRM" src=".github/assets/readme-header-light.png">
+</picture>
+
 # kwtSMS for Krayin CRM
 
 Send SMS from [Krayin CRM](https://krayincrm.com) workflows through [kwtSMS](https://www.kwtsms.com), the SMS gateway
